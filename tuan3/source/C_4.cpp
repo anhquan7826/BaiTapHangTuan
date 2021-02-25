@@ -16,9 +16,9 @@ int main() {
             int Count=0;
             if (field[i][j] != '*') {
                 for (int a=i-1; a<=i+1; a++) {
-                    if (a<0) {continue;}
+                    if (a<0 || a>=m) {continue;}
                     for (int b=j-1; b<=j+1; b++) {
-                        if (b<0) {continue;}
+                        if (b<0 || b>=n) {continue;}
                         if (field[a][b] == '*') {
                             Count++;
                         }
