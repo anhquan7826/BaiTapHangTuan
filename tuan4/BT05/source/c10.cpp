@@ -19,9 +19,9 @@ void listOfDIvisibleBy25(int a[], int n) {
         for (int j=i+1; j<n-1; j++) {
             for (int k=j+i; k<n; k++) {
                 if ((a[i]+a[j]+a[k])%25 == 0) {
-                    cout << setw(2) << a[i] << ' ';
-                    cout << setw(2) << a[j] << ' ';
-                    cout << setw(2) << a[k];
+                    cout << setfill('0') << setw(2) << a[i] << ' ';
+                    cout << setfill('0') << setw(2) << a[j] << ' ';
+                    cout << setfill('0') << setw(2) << a[k];
                     cout << "    ";
                     col++;
                     if (col == displayCol) {cout << endl; col = 0;}
