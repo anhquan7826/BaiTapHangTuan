@@ -1,0 +1,7 @@
+int* p = new int;
+int* p2 = p;
+*p = 10; // không thể gán con trỏ vào 1 giá trị
+delete p; 
+*p2 = 100;  // không thể gán con trỏ vào 1 giá trị
+cout << *p2;
+delete p2;
